@@ -22,7 +22,7 @@ document.addEventListener("DOMContentLoaded", () => {
     if (json.status === "success") {
       dogImages.innerHTML = ""
       for (let url of json.message) {
-        dogImages.innerHTML += `<img src="${url}">`;
+        dogImages.innerHTML += `<img src="${url}" height="200px">`;
       }
     }
   }
